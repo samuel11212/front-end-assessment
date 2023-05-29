@@ -1,0 +1,81 @@
+.base {
+  background: #7f97a7;
+  padding: 10px;
+  border-radius: 40px;
+  ;
+}
+
+.typo-overflow {
+  white-space: nowrap; 
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} 
+
+.custom-icon-left {
+  width: 10px;
+  height: 10px;
+  border: 2px solid slategray;
+}
+
+.custom-icon-right {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 10px;
+  left: -11px;
+  border: 2px solid slategray;
+}
+
+.custom-icon-middle {
+  position: relative;
+  top: 12px;
+  left: -9px;
+  width: 5px;
+  height: 5px;
+  border: 2px solid slategray;
+}
+
+.help {
+  color: #c8af71;
+  padding: 0 20px;
+}
+
+ol  {
+  list-style: none;
+  counter-reset: cupcake;
+  padding-right: 20px;
+}
+
+li {
+  display: flex;
+}
+
+li p {
+  padding-left: 35px;
+}
+
+li div {
+  padding-left: 20px;
+}
+
+li div div {
+  display: flex;
+  padding: 0 30px;
+}
+
+li div div span{
+  padding: 0 3px;
+}
+
+ol li {
+  counter-increment: cupcake;
+}
+
+ol li:before {
+  content: counters(cupcake, '.') ' ';
+  /* Whatever custom styles you want here */
+  color: #4c5963;
+  font-weight: bold;
+  font-family: cursive;
+}
